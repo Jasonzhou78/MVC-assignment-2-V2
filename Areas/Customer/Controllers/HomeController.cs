@@ -5,10 +5,12 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using ZhijunsBooks.Models.ViewModels;
 using ZhijunsBooks.Models;
 
-namespace ZhijunsBooks.Controllers
+namespace ZhijunsBooks.Area.Customer.Controllers
 {
+    [Area("Customer")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
