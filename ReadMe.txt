@@ -86,3 +86,5 @@ pattern: "{area=Customer}/{controller=Home}/{action=Index}/{id?}")
 0037 work on p7-8
 --added two class file ICategoryRepository and CategoryRepository
 --
+
+
