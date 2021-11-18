@@ -63,3 +63,16 @@ pattern: "{area=Customer}/{controller=Home}/{action=Index}/{id?}")
 --deleted controllers
 --slide asks for delete Data and Models, but they are deleted.
 --built and displayed it, succeeded.
+
+1739 starting working with part 2
+--built the project to make sure it is working properly, succeeded
+--change the Database=ZhijunsBooks in the appsettings.json
+--migrate the database using add-migration AddDefaultIdentityMigration
+--migration name: 20211116224211_AddDefaultIdentityMigration
+
+0003 work p4
+
+-- add Categery in .Models
+--update file ApplicationDbContext.cs
+--migration
+--update it 
