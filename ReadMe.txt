@@ -70,21 +70,64 @@ pattern: "{area=Customer}/{controller=Home}/{action=Index}/{id?}")
 --migrate the database using add-migration AddDefaultIdentityMigration
 --migration name: 20211116224211_AddDefaultIdentityMigration
 
-0003 work p4
+1744 update the database
+--update-database
+--check the tables under ZhijunsBooks in View/SQL Server Object Explorer
+--run the application, succeeded. but the database is not shown yet.
+--create a Category model under ZhijunsBooks.Models
+--update the class contents
+--add the migration via add-migration AddCategoryToDb as the command
+with a name 20211116230631_AddCategoryToDb in ZhijunsBooks.DataAccess
+--modify applicationDbContext file
+--run the command add-migration AddCategoryToDb
+--error message says an existing file
+--delete 20211116230631_AddCategoryToDb.cs file and re-run the command
+--succeeded
 
--- add Categery in .Models
---update file ApplicationDbContext.cs
---migration
---update it 
---check SQL tables, Category added
+1910 work with category
+--create a categor and added to	ApplicationDbContext
+--add a new folder Repositor
+--in it, add a folder IRepository
+--add a new item of type interface to IRepository
+--modify its contents
+--built, succeeded, save as a new version
+1945
+--create a new repository
+--modify code refer to assignment 2 folder
+--built it, succeeded, save as a new version
 
-0011 work p5
---create a class file Repository.cs in the folder Repository
---copy the code from teacher's material
---build it, succeeded;
+2000 work on page 9
 
-0037 work on p7-8
---added two class file ICategoryRepository and CategoryRepository
---
+--modify categoryRepository and ICategoryRepository
+--for file CategoryRepository, the Categories should be Category. I modified this word.
+
+2052 work on page 10
+--added a new file called ISP_Calls
+--modified its codes
+--built it, succeeded, save a new version.
+
+2140 work on page 11
+
+--add a SP_Call.cs file in Repository
+--modify its contents
+--error on  using (SqlConnection sqlCon = new SqlConnection(ConnectionString)), warning on 
+SqlConnection, added using Microsoft.Data.SqlClient to resolve the problem;
+
+2246 work on page 12
+
+--create a file under IRepository folder called IUnitOfWork
+--modify codes
+
+2330
+
+--added categorycontroller to controller in zhijunsbooks
+--modify codes of the file
+--there are two errors regarding inconsistence of accessibility of CategoryController and 
+IUnitOfWork files, and IUnitOfWork does not contain Category
+
+
+
+
+
 
 
