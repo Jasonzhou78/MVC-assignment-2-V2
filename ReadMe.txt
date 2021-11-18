@@ -76,3 +76,13 @@ pattern: "{area=Customer}/{controller=Home}/{action=Index}/{id?}")
 --update file ApplicationDbContext.cs
 --migration
 --update it 
+--check SQL tables, Category added
+
+0011 work p5
+--create a class file Repository.cs in the folder Repository
+--copy the code from teacher's material
+--build it, succeeded;
+
+0037 work on p7-8
+--added two class file ICategoryRepository and CategoryRepository
+--
