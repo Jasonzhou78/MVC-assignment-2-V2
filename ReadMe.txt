@@ -125,6 +125,10 @@ SqlConnection, added using Microsoft.Data.SqlClient to resolve the problem;
 --there are two errors regarding inconsistence of accessibility of CategoryController and 
 IUnitOfWork files, and IUnitOfWork does not contain Category
 
+0000
+--change the index.cshtml
+
+
 
 
 

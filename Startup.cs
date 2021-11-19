@@ -13,6 +13,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using ZhijunsBooks.DataAccess.Data;
 using ZhijunsBooks.DataAccess.Repository;
+using ZhijunsBooks.DataAccess.Repository.IRepository;
 
 namespace ZhijunsBooks
 {
@@ -35,7 +36,7 @@ namespace ZhijunsBooks
 
             services.AddDefaultIdentity<IdentityUser>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
-            //services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddControllersWithViews();
         }
 
